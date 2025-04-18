@@ -10,7 +10,8 @@ The Application allows users to view available books, check out books by enterin
 
 This method helped me learn how to search in an array and avoid errors by checking if the book is null.
 It finds a book by its ID and returns it.
-    public static Book findBookById(int id) {
+  <pre>  
+      public static Book findBookById(int id) {
         for (Book book : books) {
             if (book != null && book.getId() == id) {
                 return book; // Found the book
@@ -18,3 +19,4 @@ It finds a book by its ID and returns it.
         }
         return null; // when No match found
     }
+  </pre>
